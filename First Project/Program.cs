@@ -4,54 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace First_Project
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Exercise : Tables code
-            Console.Write(" enter the number : ");
-            string input = Console.ReadLine();
+            NumberTable numberTableObject = new NumberTable();
 
-            Boolean success = false;
-            while (!success)
-            {
-                if(int.TryParse(input, out int num))
-                {
-                    success = true;
-                    for(int i=1; i<=10; i++)
-                    {
-                        Console.WriteLine(num * i);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("please provide and integer !! ");
-                    Console.Write(" enter the number : ");
-                    input = Console.ReadLine();
-                }
-            }
+            numberTableObject.run();
 
+            FizzBuzz fizzBuzz = new FizzBuzz();
 
-            //Fizz Buzz Game Code
-            for (int i = 1; i <= 15; i++)
-            {
-                if (i % 3 == 0 && i % 5 == 0)
-                {
-                    Console.WriteLine("FizzBuzz");
-                }
-                else if (i % 3 == 0)
-                {
-                    Console.WriteLine("Fizz");
-                }
-                else if (i % 5 == 0)
-                {
-                    Console.WriteLine("Buzz");
-                }
-                else Console.WriteLine(i);
-            }
+            fizzBuzz.run();
 
+            Console.ReadLine();
         }
     }
 }
