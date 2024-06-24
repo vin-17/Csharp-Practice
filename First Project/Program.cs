@@ -10,6 +10,7 @@ namespace First_Project
     {
         static void Main(string[] args)
         {
+            //Exercise : Tables code
             Console.Write(" enter the number : ");
             string input = Console.ReadLine();
 
@@ -30,6 +31,15 @@ namespace First_Project
                     Console.Write(" enter the number : ");
                     input = Console.ReadLine();
                 }
+            }
+
+
+            //Fizz Buzz Game Code
+            for (int i = 1; i <= 15; i++)
+            {
+                if (i == 3) Console.WriteLine("Fizz");
+                if (i == 5) Console.WriteLine("Buzz");
+                else Console.WriteLine(i);
             }
 
         }
