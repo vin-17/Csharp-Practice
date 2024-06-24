@@ -11,13 +11,16 @@ namespace First_Project
     {
         static void Main(string[] args)
         {
-            NumberTable numberTableObject = new NumberTable();
+            //NumberTable numberTableObject = new NumberTable();
 
-            numberTableObject.run();
+            //numberTableObject.run();
 
-            FizzBuzz fizzBuzz = new FizzBuzz();
+            //FizzBuzz fizzBuzz = new FizzBuzz();
 
-            fizzBuzz.run();
+            //fizzBuzz.run();
+
+            TicTacToe gameObject = new TicTacToe();
+            gameObject.start();
 
             Console.ReadLine();
         }
